@@ -307,7 +307,7 @@ class EmulatorConfig implements Serializable {
         StringBuilder sb = new StringBuilder();
 
         // Set basics
-        sb.append(String.format(" -ports %s,%s", userPort, adbPort));
+        sb.append(String.format(" -port %s", userPort));
         if (!isNamedEmulator()) {
             sb.append(" -prop persist.sys.language=");
             sb.append(getDeviceLanguage());
